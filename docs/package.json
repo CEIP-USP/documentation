@@ -1,0 +1,19 @@
+{
+  "name": "documentation",
+  "version": "0.0.1",
+  "description": "CEIP-USP system&#39;s documentation",
+  "main": "index.js",
+  "authors": {
+    "name": "João Daniel",
+    "email": "jotaf.daniel@gmail.com"
+  },
+  "repository": "/documentation",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

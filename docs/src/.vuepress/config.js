@@ -49,11 +49,12 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'Guide',
+          title: 'Documentação',
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'frontend',
+            'backend',
           ]
         }
       ],

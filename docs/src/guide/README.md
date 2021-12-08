@@ -11,6 +11,16 @@ Por conta da pandemia do novo coronavirus, algumas medidas de controle se fizera
 
 O sistema consiste em uma aplicação Web, composta por três partes:
 
-  1. um _**frontend**_, feito em ReactJS, escrito em TypeScript - <a href="">saiba mais</a>
-  2. um _**backend**_, feito em ExpressJS, escrito em TypeScript - <a href="">saiba mais</a>
-  3. um **banco de dados** MongoDB, que segue o modelo de Documentos - <a href="">saiba mais</a>
+  1. um _**frontend**_, feito em ReactJS, escrito em TypeScript - [saiba mais][front]
+  2. um _**backend**_, feito em ExpressJS, escrito em TypeScript - [saiba mais][back]
+  3. um **banco de dados** MongoDB, que segue o modelo de Documentos - [saiba mais][db]
+
+Cada uma das partes do sistema está implementada em um Contêiner Docker diferente. A imagem a seguir apresenta uma visão estrutural dos contêineres, suas interações e as tecnologias adotadas internamente em cada um.
+
+![visão macro da arquitetura][macro]
+
+
+[front]: ./frontend
+[back]: ./backend
+[db]: https://www.mongodb.com
+[macro]: ./macro.png

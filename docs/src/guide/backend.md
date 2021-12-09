@@ -1,5 +1,7 @@
 # Backend
 
+[[TOC]]
+
 O backend tem por responsabilidade cuidar da estrutura lógica e da persistência de dados, expondo operações via API HTTP REST.
 
 A biblioteca [ExpressJS][express] auxilia na criação da API REST, que está implementada usando a linguagem [TypeScript][ts]. O acesso ao banco de dados é feito pelo [cliente do MongoBD puro][mongodb].
@@ -30,6 +32,9 @@ A variável `JWT_SECRET` é a chave de criação das assinaturas nos tokens JWT 
 :::
 
 
+## Ambiente de Produção
+
+O [_deploy_ do backend][deploy] está no [Heroku][heroku], uma plataforma de computação em nuvem. O _deploy_ é feito de maneira automática a cada novo _commit_ na _branch main_ do repositório.
 
 
 [express]: https://expressjs.com
@@ -41,3 +46,6 @@ A variável `JWT_SECRET` é a chave de criação das assinaturas nos tokens JWT 
 [dockerfile]: https://github.com/CEIP-USP/backend/blob/main/Dockerfile
 [compose]: https://github.com/CEIP-USP/backend/blob/main/docker-compose.yaml
 [envsample]: https://github.com/CEIP-USP/backend/blob/main/.env.sample
+
+[deploy]: https://ceipusp-backend.herokuapp.com
+[heroku]: https://www.heroku.com

@@ -38,10 +38,6 @@ module.exports = {
         link: '/guide/',
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
         text: 'VuePress',
         link: 'https://v1.vuepress.vuejs.org'
       }

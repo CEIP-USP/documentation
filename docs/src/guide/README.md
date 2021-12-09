@@ -20,6 +20,11 @@ Cada uma das partes do sistema está implementada em um Contêiner Docker difere
 ![visão macro da arquitetura][macro]
 
 
+## Executando o sistema
+
+Para executar o sistema como um todo, é necessário somente executar os contêineres da aplicação. Veja mais especificidades nas páginas do [Frontend][front] e do [Backend][back], nas respectivas seções **Executando em Desenvolvimento**.
+
+
 [front]: ./frontend
 [back]: ./backend
 [db]: https://www.mongodb.com

@@ -32,6 +32,18 @@ A variável `JWT_SECRET` é a chave de criação das assinaturas nos tokens JWT 
 :::
 
 
+## Execução em Desenvolvimento
+
+Para subir o servidor de backend, é importante garantir que o `.env` tenha preenchido todas as variáveis, em particular `JWT_SECRET`.
+Depois disso, basta criar os contêineres:
+
+```bash
+docker compose up --build
+```
+
+Este comando criará dois contêineres: um com uma instância de MongoDB, outro com o backend em desenvolvimento.
+
+
 ## Ambiente de Produção
 
 O [_deploy_ do backend][deploy] está no [Heroku][heroku], uma plataforma de computação em nuvem. O _deploy_ é feito de maneira automática a cada novo _commit_ na _branch main_ do repositório.

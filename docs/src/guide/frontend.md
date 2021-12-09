@@ -30,6 +30,18 @@ O frontend conta com alguns arquivos que gerenciam a conteinerização da aplica
 
 Este contêiner tem um processo que serve a aplicação para ser executada em um navegador. É importante que a aplicação tenha acesso ao endereço onde encontra-se o backend. Para isso, existe a definição da variável de ambiente `REACT_APP_BACKEND_URL`.
 
+## Execução em Desenvolvimento
+
+Para subir o servidor de backend, é importante garantir que o `.env` tenha preenchido todas as variáveis. Caso você tenha interesse em integrar com o backend próprio, veja mais [na página do backend][back]. Caso esteja substituindo o backend com outra ferramenta, preencha `REACT_APP_BACKEND_URL` com o endereço do substituto.
+Depois disso, basta criar os contêineres:
+
+```bash
+docker compose up --build
+```
+
+Este comando criará dois contêineres: um com uma instância de MongoDB, outro com o backend em desenvolvimento.
+
+
 ## Ambiente de Produção
 
 O [_deploy_ do frontend][deploy] está no [Netlify][netlify], uma plataforma de hospedagem de sites estáticos. O _deploy_ é feito de maneira automática a cada novo _commit_ na _branch main_ do repositório. Além disso, a cada _pull request (PR)_, uma previsualização do _deploy_ é gerada e fica disponível.
@@ -44,6 +56,8 @@ O [_deploy_ do frontend][deploy] está no [Netlify][netlify], uma plataforma de 
 [dockerfile]: https://github.com/CEIP-USP/frontend/blob/main/Dockerfile
 [docker-compose]: https://github.com/CEIP-USP/frontend/blob/main/docker-compose.yaml
 [env-sample]: https://github.com/CEIP-USP/frontend/blob/main/.env.sample
+
+[back]: ./backend
 
 [deploy]: https://ceip-usp.netlify.app
 [netlify]: https://www.netlify.com
